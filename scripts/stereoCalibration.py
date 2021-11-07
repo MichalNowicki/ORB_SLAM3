@@ -35,7 +35,7 @@ R1 = np.zeros((3,3), dtype = "float")
 R2 = np.zeros((3,3), dtype = "float")
 P1 = np.zeros((3,4), dtype = "float")
 P2 = np.zeros((3,4), dtype = "float")
-cv.stereoRectify(K1, d1, K2, d2, (??,??), R, T, R1, R2, P1, P2)
+cv.stereoRectify(K1, d1, K2, d2, (0,0), R, T, R1, R2, P1, P2)
 
 # Printing results
 np.set_printoptions(precision=9)
