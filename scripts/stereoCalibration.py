@@ -26,10 +26,6 @@ R = np.array([[1.0, 0.0, 0.0], \
 
 T = np.array([0.0, 0.0, 0.0], dtype = "float")
 
-# Right camera in left camera (so inverse)
-R = np.transpose(R);
-T = np.matmul(-R, T);
-
 # Computing stereo rectification
 R1 = np.zeros((3,3), dtype = "float")
 R2 = np.zeros((3,3), dtype = "float")
